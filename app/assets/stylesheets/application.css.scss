@@ -17,13 +17,15 @@
   background-color: #901E78;
 }
 
-.jumbotron{
+.hero-jumbotron{
   background-color: transparent !important;
   /*background-color:none !important;*/
   padding-top: 20%;
   color: white;
   font-family: Verdana, Geneva, sans-serif;
   text-shadow: -1px 1px 1px #000000;
+  margin-left: 25px;
+  width: 50%;
 }
 
 .hero{
@@ -40,7 +42,7 @@
   height:650px;
   }
 
-  .jumbotron{
+  .hero-jumbotron{
   background-color: transparent !important;
   /*background-color:none !important;*/
   padding-top: 25%;
@@ -60,7 +62,7 @@
   background-position: 37% 37%;
   }
 
-  .jumbotron{
+  .hero-jumbotron{
   background-color:transparent !important;
   /*background-color:none !important;*/
   padding-top: 25%;
