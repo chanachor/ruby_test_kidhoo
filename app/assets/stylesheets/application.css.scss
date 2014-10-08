@@ -13,8 +13,36 @@
  */
  @import "bootstrap";
 
+ .container{
+    font-family: Verdana, Geneva, sans-serif;
+ }
+
+ .mantra{
+    margin-top: 5px;
+ }
+
+.why-details{
+  padding-top: 10px;
+}
+
 .btn.btn-primary{
   background-color: #901E78;
+}
+
+.about-jumbotron{
+  background-color: transparent !important;
+  margin-left: 10%;
+  padding-top: 3%;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #0093DD;
+}
+
+.about-header{
+  background-image:url("../images/O Logo.png");
+  background-size: 10%;
+  background-position: top-left;
+  background-repeat: no-repeat;
+  height:150px;
 }
 
 .hero-jumbotron{
