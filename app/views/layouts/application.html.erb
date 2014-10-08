@@ -7,20 +7,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="section">
-    <div class="container">
-    <ul>
-    <ul class='nav nav-pills'>
+<!--    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <ul>
+          <li><%= link_to "Home", welcome_index_path %></li>
+          <li><%= link_to "About", welcome_about_path %></li>
+          <li><%= link_to "Contact", welcome_contact_path %></li>
+          <li><%= link_to "Product", welcome_product_path %></li>
+          <li><%= link_to "Blog", welcome_blog_path %></li>
+        </ul>
+      </div>
+    </nav>  -->
+    
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Kidhoo-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <img style="max-width:100px; margin-top: -25px;"
+             src="../images/Kidhoo_Logo_A.png">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="Kidhoo-navbar">
+      <ul class="nav navbar-nav">
         <li><%= link_to "Home", welcome_index_path %></li>
         <li><%= link_to "About", welcome_about_path %></li>
         <li><%= link_to "Contact", welcome_contact_path %></li>
         <li><%= link_to "Product", welcome_product_path %></li>
         <li><%= link_to "Blog", welcome_blog_path %></li>
-    </ul>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-
-    <%= yield %>
-  </div>
-</div>
+<%= yield %>
+    
 </body>
 </html>

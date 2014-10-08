@@ -12,3 +12,18 @@
  *= require_tree .
  */
  @import "bootstrap";
+
+.jumbotron{
+  background-color:transparent !important;
+  /*background-color:none !important;*/
+}
+
+.hero{
+  background-image: url("../images/shutterstock_120103930.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  width: auto;
+  margin-top: -25px;
+  padding-bottom: 300px;
+}
