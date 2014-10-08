@@ -13,17 +13,60 @@
  */
  @import "bootstrap";
 
+.btn.btn-primary{
+  background-color: #901E78;
+}
+
 .jumbotron{
-  background-color:transparent !important;
+  background-color: transparent !important;
   /*background-color:none !important;*/
+  padding-top: 20%;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  text-shadow: -1px 1px 1px #000000;
 }
 
 .hero{
   background-image: url("../images/shutterstock_120103930.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: auto;
-  width: auto;
+  background-size: cover;
+  height: 900px;
   margin-top: -25px;
-  padding-bottom: 300px;
+}
+
+@media (max-width: 767px) {
+  .hero{
+  background-size: cover;
+  height:650px;
+  }
+
+  .jumbotron{
+  background-color: transparent !important;
+  /*background-color:none !important;*/
+  padding-top: 25%;
+  width: 65%;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  text-shadow: -1px 1px 1px #000000;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero{
+  background-size: cover;
+  height:350px;
+  padding-bottom: 600px;
+  margin-top: -25px;
+  background-position: 37% 37%;
+  }
+
+  .jumbotron{
+  background-color:transparent !important;
+  /*background-color:none !important;*/
+  padding-top: 25%;
+  padding-left: 15px;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  text-shadow: -1px 1px 1px #000000;
+  }
 }
