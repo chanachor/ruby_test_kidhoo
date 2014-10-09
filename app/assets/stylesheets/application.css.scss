@@ -12,9 +12,25 @@
  *= require_tree .
  */
  @import "bootstrap";
+ $deflt_font: "open sans", sans-serif;
+ $k_blue: #42B4ED;
+ $k_magenta: #A83E92;
+
+ /*.navbar{
+  background: transparent;
+ }
+
+ .navbar .nav > li > a {
+    float: none;
+    line-height: 19px;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+    color: white;
+} */
 
  .container{
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: $deflt_font;
  }
 
  .mantra{
@@ -26,21 +42,22 @@
 }
 
 .btn.btn-primary{
-  background-color: #901E78;
+  background-color: $k_magenta;
+  border: $k_magenta; 
 }
 
 .about-jumbotron{
   background-color: transparent !important;
   margin-left: 10%;
   padding-top: 3%;
-  font-family: Verdana, Geneva, sans-serif;
-  color: #0093DD;
+  font-family: $deflt_font;
+  color: $k_blue;
 }
 
 .about-header{
   background-image:url("../images/O Logo.png");
-  background-size: 10%;
-  background-position: top-left;
+  background-size: 5%;
+  background-position: 3% 45%;
   background-repeat: no-repeat;
   height:150px;
 }
@@ -50,7 +67,7 @@
   /*background-color:none !important;*/
   padding-top: 10%;
   color: white;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: $deflt_font;
   text-shadow: -1px 1px 1px #000000;
   margin-left: 25px;
   width: 50%;
@@ -61,7 +78,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
-  margin-top: -25px;
+  margin-top: -100px;
 }
 
 @media (max-width: 767px) {
@@ -76,13 +93,13 @@
   padding-top: 15%;
   width: 65%;
   color: white;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: $deflt_font;
   text-shadow: -1px 1px 1px #000000;
   }
 
   .about-header{
-  background-size: 15%;
-  background-position: top-left;
+  background-size: 10%;
+  background-position: 3% 45%;
   background-repeat: no-repeat;
   height:150px;
   }
@@ -90,10 +107,10 @@
 
   .about-jumbotron{
   background-color: transparent !important;
-  margin-left: 20%;
-  padding-top: 3%;
-  font-family: Verdana, Geneva, sans-serif;
-  color: #0093DD;
+  margin-left: 15%;
+  padding-top: 5%;
+  font-family: $deflt_font;
+  color: $k_blue;
   }
 }
 
@@ -112,24 +129,24 @@
   /*background-color:none !important;*/
   padding-top: 2%;
   color: white;
-  font-family: "open sans", sans-serif;
+  font-family: $deflt_font;
   text-shadow: -1px 1px 1px #000000;
   width: 370px;
   }
 
   .about-header{
-  background-size: 20%;
-  background-position: top-left;
+  background-size: 15%;
+  background-position: 3% 45%;
   background-repeat: no-repeat;
   height:150px;
   }
 
   .about-jumbotron{
   background-color: transparent !important;
-  margin-left: 25%;
-  padding-top: 3%;
-  font-family: Verdana, Geneva, sans-serif;
-  color: #0093DD;
+  margin-left: 20%;
+  padding-top: 10%;
+  font-family: $deflt_font;
+  color: $k_blue;
   }
 
 }
